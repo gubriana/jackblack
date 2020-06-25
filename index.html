@@ -10,6 +10,11 @@
 
 		<title>Hello, world!</title>
 		<style>
+			.container {
+				top: 80px;
+    			position: relative;
+			}
+
 			.bd-placeholder-img {
 				font-size: 1.125rem;
 				text-anchor: middle;
@@ -24,16 +29,20 @@
 					font-size: 3.5rem;
 				}
 			}
+
 			nav h3 {
 				color: white;
 			}
+
 			.subrayado {
 				text-decoration: line-through;
 			}
+
 			.jumbotron {
 				height: 400px;
   				background-color: #04b431;
 			}
+
 			.carta {
 				display: inline-block;
 				padding: 7px;
@@ -44,18 +53,22 @@
 				background-color: #ffffff;
 				margin-right: 10px;
 			}
+
 			.carta p {
 				display: inline-block;
 				width: 20 px;
 				font-weight: 900;
 				font-size: 25px;
 			}
+
 			.carta img {
 				display: inline-block;
     		width: 25px;
 			}
 
-
+			container {
+				padding-top: 50px;
+			}
 		</style>
 	</head>
 	<body>
@@ -147,13 +160,13 @@
 
 			var img = '';
 			if (carta.suit == 'spades') {
-				img = '<img scr="img/picas.png">'
+				img = '<img src="img/picas.png">'
 			} else if (carta.suit == 'hearts') {
-				img = '<img scr="img/heart.png">'
+				img = '<img src="img/heart.png">'
 			} else if (carta.suit == 'diamonds') {
-				img = '<img scr="img/diamonds.png">'
+				img = '<img src="img/diamond.png">'
 			} else if (carta.suit == 'clubs') {
-				img = '<img scr="img/trebol.jpg">'
+				img = '<img src="img/trebol.jpg">'
 			}
 
 			var div_carta = '<div class="carta">' + parrafo + img + '</div>';
